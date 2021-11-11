@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        {%if placed%}
+
+            <div class="alert alert-success my-4" role="alert">
+                <h4 class="alert-heading">Predicted Result</h4>
+
+                <p>Based on the Details filled in the form,the Student : {{predictedclasssend}}</p>
+                <p>Percentage of getting the placement : <span style="color:salmon" ;>{{predictedprob}}%</span></p>
+                <hr>
+                <p class="mb-0">Congratulations,you may get a placement with the following records,try hard for big tech gaints,till then <span style="color:salmon" ;>All The Best :)</span></p>
+            </div>
+
+             <!--Tips-->
+
+
+
+            <div class="col-md-12 text-center">
+                <a href="/">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-outline-success my-2 my-sm-0">Go
+                            Back</button>
+                </a>
+            </div>
+        {%else%}
+
+            <div class="alert alert-danger my-4" role="alert">
+                <h4 class="alert-heading">Predicted Result</h4>
+                <p>Based on the Details filled in the form,the student must have to work hard,till then <span style="color:blue;">{{predictedclasssend}}</span></p>
+                <hr>
+            </div>
+
+            <!--Tips-->
+
+            <div class="alert alert-info my-4" role="alert">
+                <p><h2><span class="ez-toc-section" id="20_Tips_to_Crack_the_Campus_Placement_Interview"></span><strong>
+                            10 Tips and Tricks to Crack Internships and Placements</strong><span class="ez-toc-section-end"></span>
+                </h2>
+                <p><strong>“Dreams don't work unless you take action. The surest way to make your dreams come true is to live them.”
+                    ― Roy T. Bennett.  </strong>
+                    Youve done the hard work, and done well in your degree course. Now it’s time to cross the last hurdle between you and your career – <strong> Campus Placements Interview.</strong></p>
+                
+                <h3><span class="ez-toc-section" id="1_Pay_Attention_to_Pre-Placement_Presentations"></span><strong>1.
+                    Prepare Well for the Online Test</strong><span class="ez-toc-section-end"></span>
+                </h3>
+                <p>The online tests are very important to be cleared if you wish to crack placements. These tests have coding questions which are based on Data Structures and Algorithms and test problem-solving skills. Some of the tests may even have MCQ questions based on core subjects like OS, DBMS, CN, etc. 
+                    So, it’s very important to study these subjects for the exam. Also, since the test has a time limit to solve questions so try solving all the questions with brute force initially so that you will be able to clear test cases and then try optimizing them. This will save you time and will improve your score as you will not miss any questions. 
+                    Trying to solve a single question to achieve an optimum solution may consume a lot of your time and you may not get a chance to solve the remaining ones.</p>
+                <h3><span class="ez-toc-section" id="2_Do_Mock_Interviews"></span><strong>2. Improve your Quantitative Abilities and Maintain the Speed vs Accuracy Ratio</strong><span class="ez-toc-section-end"></span></h3>
+                <p>Mostly in finance-based companies like Goldman Sachs, JP Morgan, and service-based companies like TCS, cognizant, Accenture, etc. a lot of questions are focused on testing your aptitude skills. In the placement exams under the quantitative abilities section, 
+                    there are numerous questions with very little time to solve them. Sometimes negative markings may also be included. So, you need to solve a lot of these questions and that also in less time span. So focus more on speed vs accuracy ratio which can be built by consistent practice. 
+                    For practice questions, The book titled Quantitative Aptitude by Dr. RS Aggarwal is very much recommended. You can also watch YouTube videos for tips and tricks for answering questions as well as for finding out previously asked questions.</p>
+                <h3><span class="ez-toc-section" id="3_Be_on_Time"></span><strong>3. Improve your Logical Reasoning skills</strong><span class="ez-toc-section-end"></span></h3>
+                <p>In placement exams, a lot of tricky puzzles related to patterns, blood relations, coding and decoding, mirror and water images, etc. are asked. Even in some of the interviews, puzzles may be asked to check problem-solving abilities. So you can develop your logic-building skills by solving puzzles from the book, solving Sudoku, or watching YouTube videos for the same.
+                </p>
+                <h3><span class="ez-toc-section" id="4_Be_Presentable"></span><strong>4. Maintain an Updated LinkedIn Profile</strong><span class="ez-toc-section-end"></span></h3>
+                <p>If you wish to apply for Off-campus placements, be active on LinkedIn. Maintaining an updated profile on Linked in will help you in asking for referrals as a lot of opportunities are shared on LinkedIn. 
+                    Building a good network will help you in knowing recent openings in different companies.</p>
+                <h3><span class="ez-toc-section" id="5_Be_Confident_But_Not_Overconfident"></span><strong>5. Prepare your Resume Well   </strong><span class="ez-toc-section-end"></span></h3>
+                <p>The Resume is like the syllabus for the interview. A lot of questions based on projects and other technical skills asked in the interview are based on your resume. So write all the correct details in your resume. Also, keep your resume in the ATS-friendly format so that it gets selected easily. Your resume must be on a single page only. The Resume should also be rich in keywords along with slight details about the experiences mentioned.
+                     A lot of resume templates are available online which will help in the quick and easy designing of resumes.
+                </p>
+                <h3><span class="ez-toc-section" id="6_Research_on_Companies_Present_for_Placement_Interviews"></span><strong>6. Good Command of the English language</strong><span class="ez-toc-section-end"></span></h3>
+                <p>In a few placement exams, there is a separate section for answering questions related to verbal ability. Types of questions asked in the exams include comprehension, completing the sentence, finding the errors in the given sentence, synonyms, and antonyms for a given word, identifying words with correct spelling, etc. 
+                    For solving such questions, you need to have a good command of English grammar and must have a good vocabulary.</p>
+                <h3><span class="ez-toc-section" id="7_Take_Deep_Breaths"></span><strong>7. Practice Coding Questions Regularly</strong><span class="ez-toc-section-end"></span></h3>
+                <p>Keep practicing coding questions daily. This would help you a lot in solving the questions asked in the coding tests. You can also try weekly or monthly challenges available on various coding platforms which would check your coding skills in the stipulated time period. Some of the online tests also have multiple-choice questions based on programming. To solve this section, you need a good command of the programming concepts. 
+                    Most of the multiple-choice questions are based on identifying the output of a given pseudo code containing recursion problems, identifying and rectifying the errors in the given code, etc.</p>
+                <h3><span class="ez-toc-section" id="8_Dont_Get_Flustered"></span><strong>8. Interview-Tips Prepare your Introduction Well</strong><span class="ez-toc-section-end"></span></h3>
+                <p>Your introduction acts as the starting point of your interview so it must be prepared well to highlight the important things, you wish to share. It should be short and crisp. Remember, the first impression is the last impression.</p>
+                <h3><span class="ez-toc-section" id="9_Talk_About_What_You_Love"></span><strong>9. Have a Good Knowledge of the Core Fundamental Subjects</strong><span class="ez-toc-section-end"></span></h3>
+                <p>Prepare your resume well for the interview. Have a clear understanding of the core CS fundamental subjects such as Operating Systems, Database Management Systems, Computer Networking, etc. 
+                    You can also see the interview experiences shared on GeeksforGeeks to know the type of questions asked. You must also know the core concepts of the programming language that you have mentioned in your resume. 
+                    For example, if the language is C++, questions asked would possibly be object-oriented programming, classes, and objects, inheritance, encapsulation, polymorphism, data Abstraction, etc. Also, it is very important to communicate what you think and know clearly and confidently to the interviewer without having any hesitation.
+
+                    Remember, confidence is one of the most important parameters checked in an interview.</p>
+                <h3><span class="ez-toc-section" id="10_Bring_Enough_Copies_of_Your_Resume"></span><strong>10. Ask Relevant Questions to the Interviewer</strong><span class="ez-toc-section-end"></span></h3>
+                <p>This would show that you are genuinely interested in the job offered in that company and wish to know more about it. You can ask questions like can you share your experience working in this company? What are the tech stacks that you have worked with? etc. This will create a good impression on the interviewer and help you in knowing more about the role and the company.
+
+                    <strong> Bonus and most important tip – Don’t be afraid of rejections: </strong>Every one of us has faced rejections and it is perfectly alright. Most importantly, learning from them, analyzing where we made mistakes, and rectifying them so that we don’t make the same mistakes again. Consider rejections to be a stepping stone to your success and keep trying with full spirits!!</p>
+               
+                <hr>
+            </div>
+
+            <div class="the_content_wrapper">
+                
+              
+               
+                
+                
+
+
+            <div class="col-md-12 text-center">
+                <a href="/">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-outline-success my-2 my-sm-0">Go
+                            Back</button>
+                </a>
+            </div>
+
+        {%endif%}
+
+
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

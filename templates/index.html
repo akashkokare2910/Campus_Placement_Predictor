@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container my-4">
+
+        <!-- Intro -->
+
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">Campus Recruitment Prediction</h4>
+            <p>
+                Campus recruitment refers to the process where large companies look forward to filling certain of their vacant positions by employing students or freshers from various 
+                campuses. With the number of millennials and freshers increasing at an exponential rate, conducting campus recruitment and hiring fresh talent has become an inexplicable part of most company’s hiring procedure. Campus recruitment often involves working with university career services centers and attending career fairs to meet in-person with college students and recent graduates. Some industries participate in campus recruiting more
+                than others; finance, technology, business consulting, manufacturing and engineering are a few of the most popular.</p>
+            <div class="container text-center">
+                <img src="https://i2.wp.com/myindianews.com/wp-content/uploads/2021/04/ICWAI-Campus-Placement-ICWA-Campus-Placement-Program-to-be-held.jpg?fit=795%2C447&ssl=1  ">
+            </div>
+
+            <hr>
+            <p class="mb-0"> Here is the link for the dataset <a href="https://www.kaggle.com/benroshan/factors-affecting-campus-placement?select=Placement_Data_Full_Class.csv">dataset</a>. The goal of this project is to analyze the
+                factors that can effect the Campus Recruitment Process, and also The main objective of this model is to predict whether the student he/she gets placed or not in campus recruitment.</p>
+        </div>
+
+
+        <!-- Form -->
+        <h2 class='text-center'>Campus Placement Predictor</h2>
+        <div class="container my-4">
+            <form action="/" method="POST">
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender">Select Gender</label>
+                    <select class="form-control" id="gender" name="gender">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                </div>
+
+                <!-- Specialisation -->
+                <div class="form-group">
+                    <label for="spec">Select Specialisation</label>
+                    <select class="form-control" id="spec" name="spec">
+                            <option value="1">Marketing and Human Resources</option>
+                            <option value="0">Marketing and Finance</option>
+                        </select>
+                </div>
+
+                <!-- Technical Degree -->
+                <div class="form-group">
+                    <label for="tech">Select the Techinal Degree</label>
+                    <select class="form-control" id="tech" name="tech">
+                            <option value="0">Commerce and Management</option>
+                            <option value="1">Others</option>
+                            <option value="2">Science and Technology</option>
+                        </select>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="form-group">
+                    <label for="work">Have Work Experience ?</label>
+                    <select class="form-control" id="work" name="work">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                </div>
+
+                <!-- SSC_P -->
+
+                <div class="form-group">
+                    <label for="ssc">Enter the SSC Percentage</label>
+                    <input type="text" class="form-control" id="ssc" name="ssc">
+                </div>
+
+                <!-- HighSchool_P -->
+                <div class="form-group">
+                    <label for="hsc">Enter the High School Percentage</label>
+                    <input type="text" class="form-control" id="hsc" name="hsc">
+                </div>
+
+                <!-- Degree_P -->
+                <div class="form-group">
+                    <label for="dsc">Enter the Degree Percentage</label>
+                    <input type="text" class="form-control" id="dsc" name="dsc">
+                </div>
+
+                <!-- MBA_P -->
+                <div class="form-group">
+                    <label for="mba">Enter the MBA Percentage</label>
+                    <input type="text" class="form-control" id="mba" name="mba">
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
